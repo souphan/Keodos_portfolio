@@ -1,0 +1,87 @@
+.home-portfolio {
+    padding-bottom: 45px;
+    background: #808080;
+}
+
+a {
+    display: inline-block;
+}
+
+.web-border {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    background: #808080;
+    font-weight: 300;
+    width: 60%; 
+    padding: 1px 6px 8px 4px;
+    margin: auto;
+    text-align: center;
+}
+
+.alignnone {
+    margin:5px 0 20px;
+}
+
+.home-portfolio .top {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 25px;
+    padding-top: 0;
+    margin: auto;
+    width: 60%;
+}
+
+.post-thumb {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    float: left;
+    display: block;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin-bottom: 25px;
+}
+
+.post-thumb:hover {
+    opacity: 0.85; 
+    filter: alpha(opacity=85);
+    -o-transition: opacity 0.25s ease-in;
+    -webkit-transition: opacity 0.25s ease-in;
+    -moz-transition: opacity 0.25s ease-in;
+    transition: opacity 0.25s ease-in;
+}
+
+#master-ball {
+    width: 60%;
+    height: 70px;
+}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}
+
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+header .logo img.retina {
+display: inline;
+}
+    
+@media screen and (max-width: 960px) {
+.full-page .content,
+.portfolio-page .content {
+width: auto;
+max-width: 92%;
+}
+
+@media screen and (max-width: 520px) {
+.articles {
+padding-left: 5%;
+}
+    
+
