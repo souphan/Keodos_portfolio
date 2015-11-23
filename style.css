@@ -1,5 +1,6 @@
 a {
     display: inline-block;
+    font: 15px Tahoma;
 }
 
 li {
@@ -13,30 +14,412 @@ li {
 
 .home-portfolio {
     padding-bottom: 45px;
-    background: #808080;
 }
 
 .web-border {
     font-size: 48px;
     line-height: 1.2;
-    color: #FFFFFF;
-    background: #808080;
+    color: #D3D3D3;
+    text-align: left;
     font-weight: 300;
     width: 60%; 
     padding: 1px 6px 8px 4px;
     margin: auto;
     text-align: center;
+    font-family: Tahoma,sans-serif;
+    
 }
+
+.web-border2 {
+    font-size: 48px;
+    line-height: 1.2;
+    text-color: white;
+    text-align: left;
+    font-weight: 300;
+    width: 60%; 
+    padding: 1px 6px 8px 4px;
+    margin: auto;
+    text-align: center;
    
-/* Common style */
+}
+
+h2 span{
+    font-family:'Dosis','Arial CE',Arial,sans-serif
+}
+/* #######################################################################
+
+	2.	General Layout
+
+####################################################################### */
+
+header .logo img.retina {
+display: none;
+}
+
+header,
+section,
+footer,
+header .header {
+float: left;
+width: 100%;
+}
+.wrapper, 
+section.wrapper,
+article.wrapper,
+footer.wrapper {
+float: none;
+text-align:left;
+width: 960px;
+margin: 0 auto;
+text-align: left;
+}
+header {
+position: relative;
+z-index: 99;
+background: #f7f7f7;
+padding: 16px 0 20px 0;
+border-bottom: 1px solid #eaeaea;
+}
+span.site-title {
+width: auto;
+display: inline-block;
+padding: 10px 0;
+}
+header .logo {
+float: left;
+position: relative;
+}
+
+header nav {
+float: right;
+padding: 20px 0 12px 0;
+}
+header nav ul {
+float: right;
+}
+
+header nav ul li {
+display: inline;
+margin: 0 0 0 20px;
+padding: 0;
+}
+
+
+/* #######################################################################
+
+	Fade in and up of web-border text
+
+####################################################################### */
+.animated {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1.0s;
+	-moz-animation-duration: 1.0s;
+	-ms-animation-duration: 1.0s;
+	-o-animation-duration: 1.0s;
+	animation-duration: 1.0s;
+}
+
+.animated.hinge {
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-ms-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+@-webkit-keyframes bounceInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(240px);
+	}
+	
+	60% {
+		opacity: 1;
+		-webkit-transform: translateY(-30px);
+	}
+	
+	80% {
+		-webkit-transform: translateY(10px);
+	}
+	
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+@-moz-keyframes bounceInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(240px);
+	}
+	
+	60% {
+		opacity: 1;
+		-moz-transform: translateY(-30px);
+	}
+	
+	80% {
+		-moz-transform: translateY(10px);
+	}
+	
+	100% {
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes bounceInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(240px);
+	}
+	
+	60% {
+		opacity: 1;
+		-o-transform: translateY(-30px);
+	}
+	
+	80% {
+		-o-transform: translateY(10px);
+	}
+	
+	100% {
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes bounceInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(240px);
+	}
+	
+	60% {
+		opacity: 1;
+		transform: translateY(-30px);
+	}
+	
+	80% {
+		transform: translateY(10px);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.bounceInUp {
+	-webkit-animation-name: bounceInUp;
+	-moz-animation-name: bounceInUp;
+	-o-animation-name: bounceInUp;
+	animation-name: bounceInUp;
+}
+@-webkit-keyframes bounceOutDown {
+	0% {
+		-webkit-transform: translateY(0);
+	}
+	
+	20% {
+		opacity: 1;
+		-webkit-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 0;
+		-webkit-transform: translateY(2000px);
+	}
+}
+
+@-moz-keyframes bounceOutDown {
+	0% {
+		-moz-transform: translateY(0);
+	}
+	
+	20% {
+		opacity: 1;
+		-moz-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 0;
+		-moz-transform: translateY(2000px);
+	}
+}
+
+@-o-keyframes bounceOutDown {
+	0% {
+		-o-transform: translateY(0);
+	}
+	
+	20% {
+		opacity: 1;
+		-o-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 0;
+		-o-transform: translateY(2000px);
+	}
+}
+
+@keyframes bounceOutDown {
+	0% {
+		transform: translateY(0);
+	}
+	
+	20% {
+		opacity: 1;
+		transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 0;
+		transform: translateY(2000px);
+	}
+}
+
+.bounceOutDown {
+	-webkit-animation-name: bounceOutDown;
+	-moz-animation-name: bounceOutDown;
+	-o-animation-name: bounceOutDown;
+	animation-name: bounceOutDown;
+}
+@-webkit-keyframes tada {
+	0% {-webkit-transform: scale(1);}	
+	10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);}
+	100% {-webkit-transform: scale(1) rotate(0);}
+}
+
+@-moz-keyframes tada {
+	0% {-moz-transform: scale(1);}	
+	10%, 20% {-moz-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-moz-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-moz-transform: scale(1.1) rotate(-3deg);}
+	100% {-moz-transform: scale(1) rotate(0);}
+}
+
+@-o-keyframes tada {
+	0% {-o-transform: scale(1);}	
+	10%, 20% {-o-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-o-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-o-transform: scale(1.1) rotate(-3deg);}
+	100% {-o-transform: scale(1) rotate(0);}
+}
+
+@keyframes tada {
+	0% {transform: scale(1);}	
+	10%, 20% {transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
+	100% {transform: scale(1) rotate(0);}
+}
+
+.tada {
+	-webkit-animation-name: tada;
+	-moz-animation-name: tada;
+	-o-animation-name: tada;
+	animation-name: tada;
+}
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.bounce {
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+}
+@-webkit-keyframes web-border {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes web-border {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes web-border {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes web-border {
+	0% {
+		opacity: 0;
+		transform: translateY(2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.web-border {
+	-webkit-animation-name: web-border;
+	-moz-animation-name: web-border;
+	-o-animation-name: web-border;
+	animation-name: web-border;
+}
+
+   
+/* #######################################################################
+
+	Image animation on hover
+
+####################################################################### */
 .grid figure {
+    display: table-cell;
 	position: relative;
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	min-width: 320px;
-	max-width: 480px;
-	max-height: 360px;
 	width: 48%;
 	background: #3085a3;
 	text-align: center;
@@ -85,7 +468,7 @@ figure.img_cont > div {
 	left: 0;
 	padding: 2em;
 	width: 100%;
-	height: 50%;
+	height: 60%;
 }
 
 figure.img_cont h2,
@@ -125,26 +508,11 @@ figure.img_cont:hover p {
 	transition-duration: 0.35s;
 }
     
-body img #standard{
-    padding-left: 40px;
-}
-
-.img_cont {
-  display: table;
-  margin: 20px auto;
-}
-
-.img_cont a {
-  display: table-cell;
-  text-align: center;
-  width: 20%;
-  font-weight: bold;
-}
 
 .img_cont img {
   max-width: 350px;
-  width: 260px;
-  height: 260px;
+  width: 4800px;
+  height: 360px;
     
 }
 

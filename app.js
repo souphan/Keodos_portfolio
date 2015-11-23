@@ -1,27 +1,34 @@
-$(document).ready(function() {
-  $("button").click(function(){
-    $(".lead").animate({
-        left: '250px',
-        opacity: '0.5',
-        height: '150px',
-        width: '150px',
-        
-        
-    });
-  });
-    
-    var introPage = document.getElementsByClassName('lead') {
+ $(document).ready(function() {
+
+            $("#in").click(function(){
+               $(".lead").fadeIn( 'slow', function(){ 
+                  $(".log").text('Fade In Transition Complete');
+               });
+
+            $("#out").click(function(){
+               $(".lead").fadeOut( 'slow', function(){ 
+                  $(".log").text('Fade Out Transition Complete');
+               });
+				
+         });
+            });
+ });
+/*   var introPage = document.getElementsByClassName('lead') {
     
 }
- $(".web-border").animate({
+$(document).ready(function() {
+  $("button").click(function(){
+     $(".lead").animate({
         left: '250px',
         opacity: '0.5',
-        height: '150px',
-        width: '150px',
+        height: '500px',
+        width: '500px',
      
  });
 });
+});
 
+*/
 
 //Roll the img of master-ball to right when page loads
     //I might need a wrapper for HTML.  There was a wrapper pre my change HTML
