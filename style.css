@@ -353,7 +353,7 @@ padding: 0;
 	-o-animation-name: bounce;
 	animation-name: bounce;
 }
-@-webkit-keyframes web-border {
+@-webkit-keyframes img-bg {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateY(2000px);
@@ -365,7 +365,7 @@ padding: 0;
 	}
 }
 
-@-moz-keyframes web-border {
+@-moz-keyframes img-bg {
 	0% {
 		opacity: 0;
 		-moz-transform: translateY(2000px);
@@ -377,7 +377,7 @@ padding: 0;
 	}
 }
 
-@-o-keyframes web-border {
+@-o-keyframes img-bg {
 	0% {
 		opacity: 0;
 		-o-transform: translateY(2000px);
@@ -389,7 +389,7 @@ padding: 0;
 	}
 }
 
-@keyframes web-border {
+@keyframes img-bg {
 	0% {
 		opacity: 0;
 		transform: translateY(2000px);
@@ -401,11 +401,11 @@ padding: 0;
 	}
 }
 
-.web-border {
-	-webkit-animation-name: web-border;
-	-moz-animation-name: web-border;
-	-o-animation-name: web-border;
-	animation-name: web-border;
+.img-bg {
+	-webkit-animation-name: img-bg;
+	-moz-animation-name: img-bg;
+	-o-animation-name: img-bg;
+	animation-name: img-bg;
 }
 
    
