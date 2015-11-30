@@ -1,3 +1,34 @@
+a {
+    display: inline-block;
+    font: 15px Tahoma;
+}
+
+li {
+    display: table-cell;
+    float: right;
+    position: relative;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+.home-portfolio {
+    padding-bottom: 45px;
+}
+
+.web-border {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #D3D3D3;
+    text-align: left;
+    font-weight: 300;
+    width: 60%; 
+    padding: 1px 6px 8px 4px;
+    margin: auto;
+    text-align: center;
+    font-family: Tahoma,sans-serif;
+    
+}
 
 .web-border2 {
     font-size: 48px;
@@ -12,14 +43,71 @@
    
 }
 
-p.right {
- font-size: 13px;
- color: green;
+h2 span{
+    font-family:'Dosis','Arial CE',Arial,sans-serif
 }
+/* #######################################################################
+
+	2.	General Layout
+
+####################################################################### */
+
+header .logo img.retina {
+display: none;
+}
+
+header,
+section,
+footer,
+header .header {
+float: left;
+width: 100%;
+}
+.wrapper, 
+section.wrapper,
+article.wrapper,
+footer.wrapper {
+float: none;
+text-align:left;
+width: 960px;
+margin: 0 auto;
+text-align: left;
+}
+header {
+position: relative;
+z-index: 99;
+background: #f7f7f7;
+padding: 16px 0 20px 0;
+border-bottom: 1px solid #eaeaea;
+}
+span.site-title {
+width: auto;
+display: inline-block;
+padding: 10px 0;
+}
+header .logo {
+float: left;
+position: relative;
+}
+
+header nav {
+float: right;
+padding: 20px 0 12px 0;
+}
+header nav ul {
+float: right;
+}
+
+header nav ul li {
+display: inline;
+margin: 0 0 0 20px;
+padding: 0;
+}
+
 
 /* #######################################################################
 
-	Fade in and up of img-bg of myself
+	Fade in and up of web-border text
 
 ####################################################################### */
 .animated {
@@ -318,7 +406,6 @@ p.right {
 	-moz-animation-name: img-bg;
 	-o-animation-name: img-bg;
 	animation-name: img-bg;
-<<<<<<< HEAD
 }
 
    
@@ -442,7 +529,10 @@ display: inline;
 .portfolio-page .content {
 width: auto;
 max-width: 92%;
-=======
->>>>>>> project-week5
 }
 
+@media screen and (max-width: 520px) {
+.articles {
+padding-left: 5%;
+}
+    
