@@ -1,0 +1,316 @@
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; 
+  }
+
+  100% {
+    opacity: 1; 
+  } 
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1;
+  } 
+}
+
+
+@-webkit-keyframes fadeindown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -60px); 
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0); 
+  } 
+}
+
+@keyframes fadeindown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -60px);
+            transform: translate(0, -60px); 
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0); } }
+
+
+@-webkit-keyframes navain {
+  0% {
+    width: 0; 
+  }
+
+  100% {
+    width: 64px;  
+      
+  } }
+
+
+.caps, section.contact {
+  font-family: "jaf-facitweb", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase; 
+}
+
+.portfolio-sk {
+    color:gray;
+    position: relative;
+    margin-left: inherit;
+}
+
+nav {
+  z-index: 9990;
+  width: 100%;
+  margin-left: 116px;
+  min-width: 320px;
+  max-width: 1440px;
+  height: 60px;
+  text-align: right;
+  font-size: 16px;
+  color: #fff;
+  box-shadow: inset 0 0px rgba(255, 255, 255, 0.9);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-animation-duration: 0.375s;
+  animation-duration: 0.375s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  transition-duration: 0.2s;
+  transition-delay: 0s; }
+
+
+
+  nav ul {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 47%;
+    padding-right: 40%;
+    white-space: nowrap;
+    box-shadow: 0 1px transparent;
+    transition-duration: 0.2s;
+    transition-delay: 0s;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000; }
+
+  nav li { 
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+    margin-right: 9px;
+    text-align: center;
+    transition-duration: 0.2s;
+    transition-delay: 0s;
+    -webkit-animation-name: fadeindown;
+    animation-name: fadeindown; 
+  }
+
+    nav li:hover {
+      box-shadow: inset 0 -3px orange; 
+    }
+
+    nav li:nth-of-type(2) {
+      -webkit-animation-duration: 0.55s;
+      animation-duration: 0.55s;
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    nav li:nth-of-type(3) {
+      -webkit-animation-duration: 0.65s;
+      animation-duration: 0.65s;
+      -webkit-animation-delay: 1.05s;
+      animation-delay: 1.05s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; 
+    }
+    nav li:nth-of-type(4) {
+      -webkit-animation-duration: 0.75s;
+      animation-duration: 0.75s;
+      -webkit-animation-delay: 1.1s;
+      animation-delay: 1.1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; 
+    }
+    nav li:nth-of-type(5) {
+      -webkit-animation-duration: 0.85s;
+      animation-duration: 0.85s;
+      -webkit-animation-delay: 1.15s;
+      animation-delay: 1.15s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; 
+    }
+    nav li:nth-of-type(6) {
+      -webkit-animation-duration: 0.9s;
+      animation-duration: 0.9s;
+      -webkit-animation-delay: 1.20s;
+      animation-delay: 1.20s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; 
+    }
+    nav li:nth-of-type(7) {
+      -webkit-animation-duration: 0.9s;
+      animation-duration: 0.9s;
+      -webkit-animation-delay: 1.25s;
+      animation-delay: 1.25s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; 
+    }
+
+
+ 
+  nav a {
+    display: block;
+    position: relative;
+    height: 102px;
+    padding-top: 66px;
+    color: gray;
+    transition-duration: 0.2s;
+    transition-delay: 0s; 
+  }
+    nav a:focus {
+      color: #fff; 
+    }
+    nav a:hover {
+      color: gray;
+      -webkit-transform: translate(0, -3px);
+      transform: translate(0, -3px); 
+    }
+   
+
+  nav li.navb span:last-of-type, nav li.navc span:last-of-type, nav li.navd span:last-of-type {
+    display: none;
+  }
+
+
+
+  nav li.nava.full:hover, nav li.nava.full.hover {
+    width: 176px;
+    padding-right: 28px;
+    transition-duration: 0.25s;
+    transition-delay: 0s; 
+  }
+   
+  nav li.nava {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 64px;
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: inset 0 -4px orange;
+    transition-duration: 0.4s;
+    transition-delay: 0s;
+    -webkit-animation-duration: 0.35s;
+    animation-duration: 0.35s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-name: navain;
+    animation-name: navain; 
+  }
+
+    nav li.nava a, nav li.nava b {
+      font-weight: 800; 
+    }
+
+
+    nav li.nava a {
+      height: 105px; 
+    }
+    li.nava .caps {
+      font-size: 32px;
+      color: #fff; 
+    }
+    nav li.nava .initials {
+      position: relative;
+      z-index: 1;
+      letter-spacing: 2px; 
+    }
+
+      nav li.nava .initials span {
+        -webkit-animation-name: fadein;
+        animation-name: fadein; 
+      }
+        nav li.nava .initials span:nth-of-type(1) {
+          -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+          -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; 
+        }
+        nav li.nava .initials span:nth-of-type(2) {
+          -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+          -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; 
+        }
+        nav li.nava .initials span:nth-of-type(3) {
+          -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+          -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; 
+        }
+      nav li.nava .initials div {
+        position: relative;
+        display: inline-block;
+        width: 0;
+        transition-duration: 0.37s;
+        transition-delay: 0.03s; 
+      }
+
+
+li, a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  transition-duration: 0.3s;
+  transition-delay: 0s; 
+}
+  li, a:hover {
+    color: #000;
+    transition-duration: 0.15s;
+    transition-delay: 0s;
+  }
+
+li, a:active {
+    color: #000;
+    transition-duration: 0.1s;
+    transition-delay: 0s;
+    padding-top: 10px;
+  }
+
+
+section{
+float: left;
+width: 100%;
+}
+
+.portfolio {
+    color:gray;
+}
