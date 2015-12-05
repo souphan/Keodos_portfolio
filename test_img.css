@@ -1,3 +1,9 @@
+/* #######################################################################
+
+	Overall Body and Layout of page
+
+####################################################################### */
+
 * {
   -webkit-box-sizing:border-box;
   -khtml-box-sizing:border-box;
@@ -100,34 +106,46 @@ section .author-resume {
 }
 
 section .author-resume a {
-color: #77aa1d;
+ color: #77aa1d;  
 }
 
-#owl-demo .item{
-  background: white;
-  margin: 10px;
-  color: #FFF;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  text-align: center;
-  margin-bottom: 100px;
-  height: 300px;
-  width: 300px;
+section .author-resume a:hover {
+ box-shadow: inset 0 -3px gray; 
+ -webkit-transform: translate(0, -3px);
+ transform: translate(0, -3px);     
 }
 
-#owl-demo .item img{
-  display: block;
-  width: 100%;
-  height: 100%;
+h2 {
+ font-family:'Quattrocento Sans','Arial CE',Arial,sans-serif;
+ font-size:24px;
+ font-size:3.4rem;
+ line-height:1.2em;
+ font-weight:400;
+ font-style:italic;
+ color:#bcc0c2
 }
 
+h2 a {
+ color: orange;
+}
+h2 a:hover {
+ color: orange;
+ box-shadow: inset 0 -3px gray; 
+      -webkit-transform: translate(0, -3px);
+      transform: translate(0, -3px);     
+}
 
 ul,ol {
   padding:0;
   margin:0
 }
 
+
+/* #######################################################################
+
+	Images style on Behance and Dribble
+
+####################################################################### */
 
 .img-list {
  margin:0 0 100px 0;
@@ -204,7 +222,7 @@ height:auto;
     -ms-transition:all .3s ease-in-out;
     -o-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out;
-    z-index:2
+    z-index:2;
 }
 
 html {
@@ -223,6 +241,12 @@ text-decoration:none
 #contact1 {
  margin:0 0 1em 0;font-size:36px;font-size:3.6rem;line-height:1.3em;font-weight:300;
  color:#77aa1d;
+}
+
+#contact1:hover {
+ box-shadow: inset 0 -3px gray; 
+ -webkit-transform: translate(0, -3px);
+ transform: translate(0, -3px);     
 }
 
 section {
@@ -245,4 +269,30 @@ section .img-bg i {
  width:100%;
  height:100%;
  z-index:2
+}
+
+/* #######################################################################
+
+	Owl CSS autoplay images
+
+####################################################################### */
+
+#owl-demo .item{
+  background: white;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  text-align: center;
+  margin-bottom: 100px;
+  height: 300px;
+  width: 300px;
+}
+
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: 100%;
+    
 }

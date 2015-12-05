@@ -8,9 +8,6 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="apple-touch-icon-precomposed" href="" />
     <link rel="stylesheet" type="text/css" href="style.css"><!--makes the underlines larger than it needs to.  Also reverses the fade in of portfolio-->
-    <link rel="stylesheet" type="text/css" href="animation.css"><!--does nothing right now-->
-    <link rel="stylesheet" type="text/css" href="test_img.css">
-    <link rel="stylesheet" type="text/css" href="header.css">
 		
 </head>
     <nav>
@@ -31,7 +28,7 @@
             <li class="social"><a data-scroll data-options="speed: 600" href="index.html"><span class="portfolio">Portfolio</span><span></span></a></li>
             <li class="social"><a data-scroll data-options="speed: 600" href="about_me.html"><span class="portfolio">About Souphan</span><span></span></a></li>
             <li class="social"><a data-scroll data-options="speed: 600" href="get_in_touch.html"><span class="portfolio">Get in touch</span><span></span></a></li>
-            <li class="social"><a href="http://twitter.com/souphan" target="_blank"><span class="portfolio">Twitter</span></a></li>
+            <li class="social"><a href="http://twitter.com/souphan316" target="_blank"><span class="portfolio">Twitter</span></a></li>
             <li class="social"><a href="http://dribbble.com/souphan" target="_blank"><span class="portfolio">Dribble</span></a></li>
         </ul>
         
@@ -44,7 +41,7 @@
 		        			        
 		        		        
 		        <h2>Nice to meet you!</h2>
-                <p>Want to say hello? Need creative help? Get at me!</p>
+                <p>Want to say hello? Need creative help?</p>
 		        
 		        		        <script>
 		        	jQuery(document).ready(function() {
@@ -52,11 +49,17 @@
 		        			jQuery(".contact-form form").validate();
 		        	});
 		        </script>
+        <script>
+        
+                function clicked() {
+                    return confirm('Thank you for reaching out!');
+                    }</script>
+        
 		      <div class="contact-form">
 		        		<hgroup>
-		        			<h2>Contact me</h2>
+		        			<h2>Hit me up!</h2>
 		        		</hgroup>
-		            <form action="https://mail.google.com/mail/?tab=wm" id="contactForm" method="post">
+		            <form action="https://getsimpleform.com/messages?form_api_token=fde4bcbf8129ae28a5403fca8650fd97" id="contactForm" method="post">
 		        	<p class="form-name">
 		        		<input type="text" name="contactname" id="contactname" value="" class="required requiredfield" placeholder="Name *" />
 		            </p>
@@ -64,25 +67,19 @@
 		        		<input type="email" name="email" id="email" value="" class="required requiredfield email" placeholder="Email *" />
 		            </p>
 		            <p class="form-tel">
-		        		<input type="tel" name="contactphone" id="contactphone" value="" placeholder="Your Telephone Number" />
+		        		<input type="tel" name="contactphone" id="contactphone" value="" placeholder="Telephone Number" />
 		            </p>
 		            <p class="form-comment">
 		        		<textarea name="comments" id="commentstext" rows="10" cols="60" class="required requiredfield" placeholder="Your Enquiry"></textarea>
 		            </p>
 		            <p class="form-submit">
-		        		<button type="submit">Submit</button>
+		        		<input type="submit" onclick="return clicked();" class="styled-button" value="Submit"/> 
 		           </p>
-		           <input type="hidden" name="submitted" id="submitted" value="true" />
-		        									
+							
 		           </form>
 		      </div>
-		        		       
-		       
-            </article>
-		    
-	
+		        		    
 <footer>
-	<div class="wrapper">
 	
 	
 	<div class="widgets widgets-on">
@@ -114,26 +111,17 @@
 	
 
         <p class="right"><a href="mailto:souphan.ctr@gmail.com" title="Contact us by email">souphan@skdesigns</a></p>
-	    <small class="right">&copy; 2015 SKDESIGNS</small>
-			<div class="the-contact social-white">
+        <div id="bottom-mark">
+        <small class="right">&copy; 2015 SKDESIGNS</small>
 			<div class="social-links">
-				<a class="social twitter" href="http://www.twitter.com/souphan" title="Twitter"><span>Twitter</span></a>											
+				<a class="social twitter" href="http://www.twitter.com/souphan316" title="Twitter"><span>Twitter</span></a>											
                 <a class="social pinterest" href="http://pinterest.com/souphan" title="Pinterest"><span>Pinterest</span></a>				
                 <a class="social dribbble" href="http://dribbble.com/souphan" title="Dribbble"><span>Dribbble</span></a>							
             </div>
-		    </div>		
-			
-	</div>
+		  </div>		
+	
 </footer>
-
-</div>
-    
+</div>  
 </section>
-
-
-</div>
-</div>
-
-</body>
 </html>
 

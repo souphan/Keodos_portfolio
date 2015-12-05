@@ -105,13 +105,14 @@ nav {
     transition-duration: 0.2s;
     transition-delay: 0s;
     -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000; }
+    -webkit-perspective: 1000; 
+  }
 
   nav li { 
     position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-left: 30px;
+    margin-left: 8px;
     margin-right: 9px;
     text-align: center;
     transition-duration: 0.2s;
@@ -133,6 +134,7 @@ nav {
       animation-fill-mode: both;
     }
     nav li:nth-of-type(3) {
+      text-transform: uppercase; 
       -webkit-animation-duration: 0.65s;
       animation-duration: 0.65s;
       -webkit-animation-delay: 1.05s;
@@ -141,6 +143,7 @@ nav {
       animation-fill-mode: both; 
     }
     nav li:nth-of-type(4) {
+      text-transform: uppercase; 
       -webkit-animation-duration: 0.75s;
       animation-duration: 0.75s;
       -webkit-animation-delay: 1.1s;
@@ -149,6 +152,7 @@ nav {
       animation-fill-mode: both; 
     }
     nav li:nth-of-type(5) {
+      text-transform: uppercase; 
       -webkit-animation-duration: 0.85s;
       animation-duration: 0.85s;
       -webkit-animation-delay: 1.15s;
@@ -157,6 +161,7 @@ nav {
       animation-fill-mode: both; 
     }
     nav li:nth-of-type(6) {
+      text-transform: uppercase; 
       -webkit-animation-duration: 0.9s;
       animation-duration: 0.9s;
       -webkit-animation-delay: 1.20s;
@@ -165,6 +170,7 @@ nav {
       animation-fill-mode: both; 
     }
     nav li:nth-of-type(7) {
+      text-transform: uppercase; 
       -webkit-animation-duration: 0.9s;
       animation-duration: 0.9s;
       -webkit-animation-delay: 1.25s;
@@ -292,6 +298,7 @@ li, a {
   transition-duration: 0.3s;
   transition-delay: 0s; 
 }
+
   li, a:hover {
     color: #000;
     transition-duration: 0.15s;
