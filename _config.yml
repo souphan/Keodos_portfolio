@@ -1,0 +1,11 @@
+  wordpress:
+  youtube:
+
+  # Scripts
+  # #1
+  google_analytics: "UA-71218804-1"
+  disqus_shortname:
+  katex: true # Enable if using math markup
+
+  # Localization strings
+  str_follow_on: "Follow on"
