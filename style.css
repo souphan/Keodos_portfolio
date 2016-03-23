@@ -74,7 +74,7 @@
 nav {
   z-index: 9990;
   width: 100%;
-  margin-left: 116px;
+  margin-left: 90px;
   min-width: 320px;
   max-width: 1440px;
   height: 60px;
@@ -268,7 +268,7 @@ nav {
     nav li.nava .initials {
       position: relative;
       z-index: 1;
-      letter-spacing: 2px; 
+      letter-spacing: 2px;
     }
 
       nav li.nava .initials span {
